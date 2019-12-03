@@ -5,8 +5,8 @@
   "main": "movidex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node movidex",
-    "dev": "nodemon movidex"
+    "start": "node app",
+    "dev": "nodemon app"
   },
   "repository": {
     "type": "git",
