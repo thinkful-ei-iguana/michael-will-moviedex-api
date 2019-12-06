@@ -54,5 +54,15 @@ function handleMovieSearch(req, res){
 
 app.get('/movie', handleMovieSearch);
 
+app.use((error, req, res, next) => {
+  let response
+  if (process.env.NODE_ENV === 'production') {
+    response = { error: { message: 'server error' }}
+  } else {
+    response = { error }
+  }
+  res.status(500).json(response)
+})
+
 const PORT = process.env.PORT || 8000;
 app.listen(PORT);
