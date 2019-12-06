@@ -54,8 +54,5 @@ function handleMovieSearch(req, res){
 
 app.get('/movie', handleMovieSearch);
 
-const PORT ='8000';
-const baseUrl = 'http://localhost:';
-app.listen(PORT, () => {
-  console.log(`Express is listening at: ${baseUrl}${PORT}`);
-});
+const PORT = process.env.PORT || 8000;
+app.listen(PORT);

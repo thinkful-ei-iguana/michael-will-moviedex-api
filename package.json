@@ -13,6 +13,9 @@
     "url": "git+https://github.com/thinkful-ei-iguana/michael-will-moviedex-api.git"
   },
   "keywords": [],
+  "engines": {
+    "node": "v12.13.0"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
